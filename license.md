@@ -1,3 +1,4 @@
 # License
 
-The documents here are under Creative Common License
+The documents here are under **Creative Common License**
+
