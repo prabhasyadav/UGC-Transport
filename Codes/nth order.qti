@@ -1,0 +1,748 @@
+QtiPlot 0.9.8 project file
+<scripting-lang>	Python
+<windows>	4
+<table>
+zeroth	151	2	05/12/16 5:23 AM
+geometry	13	20	445	220	
+header	Time (y)[X]	Concentration (mg/L)[Y]
+ColWidth	100	100	
+<com>
+</com>
+ColType	0;0/3	0;0/3
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel		2
+<data>
+0	0	10
+1	0.2	9.81
+2	0.4	9.62
+3	0.6	9.43
+4	0.8	9.24
+5	1	9.05
+6	1.2	8.86
+7	1.4	8.67
+8	1.6	8.48
+9	1.8	8.29
+10	2	8.1
+11	2.2	7.91
+12	2.4	7.72
+13	2.6	7.53
+14	2.8	7.34
+15	3	7.15
+16	3.2	6.96
+17	3.4	6.77
+18	3.6	6.58
+19	3.8	6.39
+20	4	6.2
+21	4.2	6.01
+22	4.4	5.82
+23	4.6	5.63
+24	4.8	5.44
+25	5	5.25
+26	5.2	5.06
+27	5.4	4.87
+28	5.6	4.68
+29	5.8	4.49
+30	6	4.3
+31	6.2	4.11
+32	6.4	3.92
+33	6.6	3.73
+34	6.8	3.54
+35	7	3.35
+36	7.2	3.16
+37	7.4	2.97
+38	7.6	2.78
+39	7.8	2.59
+40	8	2.4
+41	8.2	2.21
+42	8.4	2.02
+43	8.6	1.83
+44	8.8	1.63
+45	9	1.44
+46	9.2	1.25
+47	9.4	1.06
+48	9.6	0.875
+49	9.8	0.684
+50	10	0.494
+51	10.2	0.304
+52	10.4	0.114
+53	10.6	0
+54	10.8	0
+55	11	0
+56	11.2	0
+57	11.4	0
+58	11.6	0
+59	11.8	0
+60	12	0
+61	12.2	0
+62	12.4	0
+63	12.6	0
+64	12.8	0
+65	13	0
+66	13.2	0
+67	13.4	0
+68	13.6	0
+69	13.8	0
+70	14	0
+71	14.2	0
+72	14.4	0
+73	14.6	0
+74	14.8	0
+75	15	0
+76	15.2	0
+77	15.4	0
+78	15.6	0
+79	15.8	0
+80	16	0
+81	16.2	0
+82	16.4	0
+83	16.6	0
+84	16.8	0
+85	17	0
+86	17.2	0
+87	17.4	0
+88	17.6	0
+89	17.8	0
+90	18	0
+91	18.2	0
+92	18.4	0
+93	18.6	0
+94	18.8	0
+95	19	0
+96	19.2	0
+97	19.4	0
+98	19.6	0
+99	19.8	0
+100	20	0
+101	20.2	0
+102	20.4	0
+103	20.6	0
+104	20.8	0
+105	21	0
+106	21.2	0
+107	21.4	0
+108	21.6	0
+109	21.8	0
+110	22	0
+111	22.2	0
+112	22.4	0
+113	22.6	0
+114	22.8	0
+115	23	0
+116	23.2	0
+117	23.4	0
+118	23.6	0
+119	23.8	0
+120	24	0
+121	24.2	0
+122	24.4	0
+123	24.6	0
+124	24.8	0
+125	25	0
+126	25.2	0
+127	25.4	0
+128	25.6	0
+129	25.8	0
+130	26	0
+131	26.2	0
+132	26.4	0
+133	26.6	0
+134	26.8	0
+135	27	0
+136	27.2	0
+137	27.4	0
+138	27.6	0
+139	27.8	0
+140	28	0
+141	28.2	0
+142	28.4	0
+143	28.6	0
+144	28.8	0
+145	29	0
+146	29.2	0
+147	29.4	0
+148	29.6	0
+149	29.8	0
+150	30	0
+</data>
+</table>
+<multiLayer>
+zerothorder	1	1	05/12/16 5:28 AM
+geometry	0	555	1366	579	minimized	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	1302	309
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	10	-9	648	562
+<PageGeometry>0.00732064	-0.0161002	0.474378	1.00537</PageGeometry>
+PlotTitle	 	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	0	1	0	
+AxesTitles	time (y)	Concentration, C, (mg/L)		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	4	5124	4
+AxesTitleDistance	2	-1	2	-1
+InvertedTitle	0	0	0	0
+TitleFont	Noto Sans	15	75	0	0	0
+ScaleFont0	Noto Sans	13	50	0	0	0
+ScaleFont1	Noto Sans	13	75	0	0	0
+ScaleFont2	Noto Sans	13	50	0	0	0
+ScaleFont3	Noto Sans	13	75	0	0	0
+AxisFont0	Noto Sans	13	50	0	0	0
+AxisFont1	Noto Sans	13	50	0	0	0
+AxisFont2	Noto Sans	13	50	0	0	0
+AxisFont3	Noto Sans	13	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#313739	#313739	#313739	#313739
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	zeroth_Time (y)	zeroth_Concentration (mg/L)	0	1	#ff0000	0	2	7	0	#000000	#000000	0	#000000	14	1	2	0	0	150	1
+scale	0	0	12	0	7	5	0	0
+scale	1	0	12	0	7	5	0	0
+scale	2	0	30	0	7	5	0	0
+scale	3	0	30	0	7	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+<Legend>
+<Frame>0</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>21.531100478469</x>
+<y>971.33757961783</y>
+<right>258.373205741627</right>
+<bottom>878.980891719745</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+</Text>
+<Font>Noto Sans	10	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+<Legend>
+<Frame>0</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>6.3011456628478</x>
+<y>6.3973509933775</y>
+<right>12.6022913256956</right>
+<bottom>5.16556291390729</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+C(t) = C<sub>0</sub> - λ t
+</Text>
+<Font>Noto Sans	15	75	1	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>0</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+<Legend>
+<Frame>0</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>6.873977086743</x>
+<y>5.2450331125828</y>
+<right>12.2585924713584</right>
+<bottom>4.01324503311258</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+t<sub>1/2</sub> = C<sub>0</sub>/2λ
+</Text>
+<Font>Noto Sans	15	75	1	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>0</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+<Legend>
+<Frame>0</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>-0.28641571194763</x>
+<y>10.887417218543</y>
+<right>1.77577741407529</right>
+<bottom>9.65562913907285</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+C<sub>0</sub>
+</Text>
+<Font>Noto Sans	15	75	1	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>0</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<graph>
+ggeometry	740	-13	583	554
+<PageGeometry>0.541728	-0.0232558	0.426794	0.991055</PageGeometry>
+PlotTitle	 	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	0	1	0	
+AxesTitles	time, t, (y)	Concentration, C, (mg/L)		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	4	4	4
+AxesTitleDistance	2	-1	2	-1
+InvertedTitle	0	0	0	0
+TitleFont	Noto Sans	15	75	0	0	0
+ScaleFont0	Noto Sans	12	50	0	0	0
+ScaleFont1	Noto Sans	17	75	0	0	0
+ScaleFont2	Noto Sans	12	50	0	0	0
+ScaleFont3	Noto Sans	17	75	0	0	0
+AxisFont0	Noto Sans	12	50	0	0	0
+AxisFont1	Noto Sans	14	50	0	0	0
+AxisFont2	Noto Sans	12	50	0	0	0
+AxisFont3	Noto Sans	14	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#313739	#313739	#313739	#313739
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	first_time (y)	first_Concentration (mg/L)	0	1	#ff0000	0	2	7	0	#000000	#000000	0	#000000	14	1	2	0	0	150	1
+scale	0	0	12	0	7	5	0	0
+scale	1	0	12	0	7	5	0	0
+scale	2	0	35	0	8	5	0	0
+scale	3	0	35	0	8	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+<Legend>
+<Frame>0</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>6.34375</x>
+<y>7.2317880794702</y>
+<right>2.90993071593534</right>
+<bottom>10.514657980456</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+C(t) = C<sub>0</sub> - e<sup>-λ t</sup>
+</Text>
+<Font>Noto Sans	15	75	1	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>0</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+<Legend>
+<Frame>0</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>6.84375</x>
+<y>5.9602649006623</y>
+<right>2.90993071593534</right>
+<bottom>10.514657980456</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+t<sub>1/2</sub> = ln 2/λ
+</Text>
+<Font>Noto Sans	15	75	1	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>0</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+<Legend>
+<Frame>0</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>-0.28688524590164</x>
+<y>10.887417218543</y>
+<right>2.90993071593534</right>
+<bottom>10.514657980456</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+C<sub>0</sub>
+</Text>
+<Font>Noto Sans	15	75	1	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>0</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<table>
+first	151	2	05/12/16 5:41 AM
+geometry	0	0	445	220	
+header	time (y)[X]	Concentration (mg/L)[Y]
+ColWidth	100	100	
+<com>
+</com>
+ColType	0;0/3	0;0/3
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel		2
+<data>
+0	0	10
+1	0.2	9.74
+2	0.4	9.49
+3	0.6	9.24
+4	0.8	9
+5	1	8.77
+6	1.2	8.54
+7	1.4	8.32
+8	1.6	8.1
+9	1.8	7.89
+10	2	7.68
+11	2.2	7.48
+12	2.4	7.29
+13	2.6	7.1
+14	2.8	6.91
+15	3	6.73
+16	3.2	6.56
+17	3.4	6.39
+18	3.6	6.22
+19	3.8	6.06
+20	4	5.9
+21	4.2	5.75
+22	4.4	5.6
+23	4.6	5.45
+24	4.8	5.31
+25	5	5.17
+26	5.2	5.04
+27	5.4	4.91
+28	5.6	4.78
+29	5.8	4.66
+30	6	4.54
+31	6.2	4.42
+32	6.4	4.3
+33	6.6	4.19
+34	6.8	4.08
+35	7	3.98
+36	7.2	3.87
+37	7.4	3.77
+38	7.6	3.67
+39	7.8	3.58
+40	8	3.48
+41	8.2	3.39
+42	8.4	3.31
+43	8.6	3.22
+44	8.8	3.14
+45	9	3.05
+46	9.2	2.97
+47	9.4	2.9
+48	9.6	2.82
+49	9.8	2.75
+50	10	2.68
+51	10.2	2.61
+52	10.4	2.54
+53	10.6	2.47
+54	10.8	2.41
+55	11	2.35
+56	11.2	2.29
+57	11.4	2.23
+58	11.6	2.17
+59	11.8	2.11
+60	12	2.06
+61	12.2	2
+62	12.4	1.95
+63	12.6	1.9
+64	12.8	1.85
+65	13	1.8
+66	13.2	1.76
+67	13.4	1.71
+68	13.6	1.67
+69	13.8	1.62
+70	14	1.58
+71	14.2	1.54
+72	14.4	1.5
+73	14.6	1.46
+74	14.8	1.42
+75	15	1.39
+76	15.2	1.35
+77	15.4	1.31
+78	15.6	1.28
+79	15.8	1.25
+80	16	1.21
+81	16.2	1.18
+82	16.4	1.15
+83	16.6	1.12
+84	16.8	1.09
+85	17	1.06
+86	17.2	1.04
+87	17.4	1.01
+88	17.6	0.983
+89	17.8	0.958
+90	18	0.933
+91	18.2	0.909
+92	18.4	0.885
+93	18.6	0.862
+94	18.8	0.84
+95	19	0.818
+96	19.2	0.796
+97	19.4	0.776
+98	19.6	0.756
+99	19.8	0.736
+100	20	0.717
+101	20.2	0.698
+102	20.4	0.68
+103	20.6	0.662
+104	20.8	0.645
+105	21	0.628
+106	21.2	0.612
+107	21.4	0.596
+108	21.6	0.581
+109	21.8	0.565
+110	22	0.551
+111	22.2	0.536
+112	22.4	0.522
+113	22.6	0.509
+114	22.8	0.496
+115	23	0.483
+116	23.2	0.47
+117	23.4	0.458
+118	23.6	0.446
+119	23.8	0.434
+120	24	0.423
+121	24.2	0.412
+122	24.4	0.401
+123	24.6	0.391
+124	24.8	0.381
+125	25	0.371
+126	25.2	0.361
+127	25.4	0.352
+128	25.6	0.343
+129	25.8	0.334
+130	26	0.325
+131	26.2	0.317
+132	26.4	0.308
+133	26.6	0.3
+134	26.8	0.293
+135	27	0.285
+136	27.2	0.278
+137	27.4	0.27
+138	27.6	0.263
+139	27.8	0.256
+140	28	0.25
+141	28.2	0.243
+142	28.4	0.237
+143	28.6	0.231
+144	28.8	0.225
+145	29	0.219
+146	29.2	0.213
+147	29.4	0.208
+148	29.6	0.202
+149	29.8	0.197
+150	30	0.192
+</data>
+</table>
+<multiLayer>
+Graph1	1	1	05/12/16 5:43 AM
+geometry	26	40	472	446	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	4	454	384
+<PageGeometry>0.0107759	0.0100503	0.978448	0.964824</PageGeometry>
+PlotTitle	 	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	0	1	0	
+AxesTitles	time, t, (y)	Concentration, C, (mg/L)		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	4	4	4
+AxesTitleDistance	2	-1	2	-1
+InvertedTitle	0	0	0	0
+TitleFont	Noto Sans	11	75	0	0	0
+ScaleFont0	Noto Sans	9	50	0	0	0
+ScaleFont1	Noto Sans	9	75	0	0	0
+ScaleFont2	Noto Sans	9	50	0	0	0
+ScaleFont3	Noto Sans	9	75	0	0	0
+AxisFont0	Noto Sans	9	50	0	0	0
+AxisFont1	Noto Sans	9	50	0	0	0
+AxisFont2	Noto Sans	9	50	0	0	0
+AxisFont3	Noto Sans	9	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#313739	#313739	#313739	#313739
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	first_time (y)	first_Concentration (mg/L)	0	1	#ff0000	0	2	7	0	#000000	#000000	0	#000000	14	1	2	0	0	150	1
+scale	0	0	12	0	7	5	0	0
+scale	1	0	12	0	7	5	0	0
+scale	2	0	35	0	8	5	0	0
+scale	3	0	35	0	8	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+<Legend>
+<Frame>0</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>6.34375</x>
+<y>7.2317880794702</y>
+<right>9.78125</right>
+<bottom>6</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+C(t) = C<sub>0</sub> - e<sup>-λ t</sup>
+</Text>
+<Font>Noto Sans	11	75	1	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>0</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+<Legend>
+<Frame>0</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>6.84375</x>
+<y>5.9602649006623</y>
+<right>9.78125</right>
+<bottom>4.72847682119205</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+t<sub>1/2</sub> = ln 2/λ
+</Text>
+<Font>Noto Sans	11	75	1	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>0</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+<Legend>
+<Frame>0</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>-0.28688524590164</x>
+<y>10.887417218543</y>
+<right>1.77868852459016</right>
+<bottom>9.65562913907285</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+C<sub>0</sub>
+</Text>
+<Font>Noto Sans	11	75	1	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>0</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<open>1</open>

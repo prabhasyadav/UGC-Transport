@@ -1,0 +1,877 @@
+QtiPlot 0.9.8 project file
+<scripting-lang>	muParser
+<windows>	8
+<table>
+Linear2	6	3	06-10-2013 14:15:58
+geometry	0	0	445	220	
+header	Initial C(mg/L)[Y]	Equilibrium C(mg/L)[X]	Mass adsorbed(mg/kg)[Y]
+ColWidth	168	127	169	
+<com>
+</com>
+ColType	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0
+HiddenColumn	0	0	0
+Comments				
+WindowLabel	C:/Users/PKY/Desktop/new.txt	2
+<data>
+0	50	15	35
+1	75	30	45
+2	100	40	60
+3	150	60	90
+4	200	80	120
+5	250	100	150
+</data>
+</table>
+<table>
+Langmuir	29	7	03/12/16 10:41 PM
+geometry	13	20	445	220	
+header	Initial Ci (mg/L)[X]	Adsorbent mass (mg)[Y]	Equil. C (mg/L)[X]	Adsorbed solute (mg)[Y]	C-a (mg/mg)[Y]	1/equil C[X]	1/c-a[Y]
+ColWidth	100	100	126	100	133	100	100	
+<com>
+<col nr="3">
+(col("Initial Ci (mg/L)")-col("Equil. C (mg/L)"))*200/1000
+</col>
+<col nr="4">
+col("Adsorbed solute (mg)")/col("Adsorbent mass (mg)")
+</col>
+<col nr="5">
+1/col("Equil. C (mg/L)")
+</col>
+<col nr="6">
+1/col("C-a (mg/mg)")
+</col>
+</com>
+ColType	0;0/13	0;0/13	0;0/13	0;0/13	0;0/3	0;0/3	0;0/3
+ReadOnlyColumn	0	0	0	0	0	0	0
+HiddenColumn	0	0	0	0	0	0	0
+Comments								
+WindowLabel		2
+<data>
+0	250	804	4.7	49.06	0.061	0.213	16.4
+1	250	668	7	48.6	0.0727	0.143	13.8
+2	250	512	9.31	48.138	0.094	0.107	10.6
+3	250	393	16.6	46.68	0.119	0.0602	8.4
+4	250	313	32.5	43.5	0.139	0.0308	7.19
+5	250	238	62.8	37.44	0.157	0.0159	6.37
+</data>
+</table>
+<table>
+Freundlichcalc	30	4	04/12/16 8:27 AM
+geometry	26	40	662	220	
+header	C[X]	Ca[Y]	Log Ca[Y]	Log C[X]
+ColWidth	100	100	100	100	
+<com>
+<col nr="2">
+log10(col("Ca"))
+</col>
+<col nr="3">
+log10(col("C"))
+</col>
+</com>
+ColType	0;0/3	0;0/3	0;0/3	0;0/3
+ReadOnlyColumn	0	0	0	0
+HiddenColumn	0	0	0	0
+Comments					
+WindowLabel		2
+<data>
+0	3.5	0.05	-1.3	0.544
+1	5.2	0.064	-1.19	0.716
+2	8	0.084	-1.08	0.903
+3	12.5	0.11	-0.959	1.1
+4	20.5	0.15	-0.824	1.31
+5	33	0.2	-0.699	1.52
+</data>
+</table>
+<multiLayer>
+Linear	1	1	06-10-2013 14:40:02
+geometry	39	60	408	310	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	10	2	383	250
+<PageGeometry>0.025	0.00763359	0.9575	0.954198</PageGeometry>
+PlotTitle		#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	1	0	1	0	#000000	2	0.5	#000000	2	0.4	#000000	2	0.5	#000000	2	0.4	0	0	2	0	0
+EnabledAxes	1	0	1	0	
+AxesTitles	Equilibrium Concentration (mg/L)	Mass adsorbed (mg/kg)		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	4	4	4
+AxesTitleDistance	2	-1	2	-1
+InvertedTitle	0	0	0	0
+TitleFont	MS Shell Dlg 2	6	75	0	0	0
+ScaleFont0	MS Shell Dlg 2	10	50	0	0	0
+ScaleFont1	MS Shell Dlg 2	5	75	0	0	0
+ScaleFont2	MS Shell Dlg 2	10	50	0	0	0
+ScaleFont3	MS Shell Dlg 2	5	75	0	0	0
+AxisFont0	MS Shell Dlg 2	8	50	0	0	0
+AxisFont1	MS Shell Dlg 2	5	50	0	0	0
+AxisFont2	MS Shell Dlg 2	8	50	0	0	0
+AxisFont3	MS Shell Dlg 2	5	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#000000	0
+curve	Linear2_Equilibrium C(mg/L)	Linear2_Mass adsorbed(mg/kg)	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	6	1
+<Function>
+<Type>0</Type>
+<Title>LinearFit1</Title>
+<Expression>A*x+B</Expression>
+<Variable>x</Variable>
+<Range>15	100</Range>
+<Points>2</Points>
+<Constant>A	1.40439381611066</Constant>
+<Constant>B	7.2620016273393</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#ff0000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	20	160	0	8	5	0	0
+scale	1	20	160	0	8	5	0	0
+scale	2	0	105	0	7	5	0	0
+scale	3	0	105	0	7	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+<Legend>
+<Frame>0</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>1.3333333333333</x>
+<y>160</y>
+<right>38.2775919732441</right>
+<bottom>128.888888888889</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+\l(2)%(2)
+<b>Function</b>: A*x+B
+<b>R^2</b> = 0.9918
+<b>B</b> = 7.2620
+<b>A</b> = 1.4044
+</Text>
+<Font>MS Shell Dlg 2	7	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>255</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<multiLayer>
+Langmuir_nonlinear	1	1	03/12/16 10:59 PM
+geometry	52	80	456	423	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	4	439	362
+<PageGeometry>0.0111607	0.0106667	0.979911	0.965333</PageGeometry>
+PlotTitle	 	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	0	1	0	
+AxesTitles	Equilibrium Concentration C (mg/L)	Adsorbed mass/adsorbent  C<sub>a</sub> (mg/mg)<br>		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	4	5124	4
+AxesTitleDistance	2	-1	2	-1
+InvertedTitle	0	0	0	0
+TitleFont	Noto Sans	10	50	0	0	0
+ScaleFont0	Noto Sans	8	75	0	0	0
+ScaleFont1	Noto Sans	8	75	0	0	0
+ScaleFont2	Noto Sans	8	75	0	0	0
+ScaleFont3	Noto Sans	8	75	0	0	0
+AxisFont0	Noto Sans	8	50	0	0	0
+AxisFont1	Noto Sans	8	50	0	0	0
+AxisFont2	Noto Sans	8	50	0	0	0
+AxisFont3	Noto Sans	8	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#313739	#313739	#313739	#313739
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	Langmuir_Equil. C (mg/L)	Langmuir_C-a (mg/mg)	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	28	1
+scale	0	0	0.2	0	5	5	0	0
+scale	1	0	0.2	0	5	5	0	0
+scale	2	0	70	0	8	5	0	0
+scale	3	0	70	0	8	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+<line>	-0.38781163434903	0.156183745583039	64.1828254847645	0.156183745583039	1	#000000	DashLine	0	0	4	45	1	1</line>
+<Legend>
+<Frame>0</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>0.19390581717452</x>
+<y>0.17526501766784</y>
+<right>20.9418282548476</right>
+<bottom>0.173144876325088</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+C<sub>a,max</sub>
+</Text>
+<Font>Noto Sans	11	75	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<multiLayer>
+LangmuirLinear	1	1	03/12/16 11:16 PM
+geometry	65	100	760	394	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	378	14	348	294
+<PageGeometry>0.50266	0.0404624	0.462766	0.849711</PageGeometry>
+PlotTitle		#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	1	0	1	0	#c0c0c0	1	0.5	#a0a0a4	2	0.4	#c0c0c0	1	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	0	1	0	
+AxesTitles	1/C (1/mg)	1/C<sub>a</sub> (mg/mg)		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	4	4	4
+AxesTitleDistance	2	-1	2	-1
+InvertedTitle	0	0	0	0
+TitleFont	Noto Sans	10	75	0	0	0
+ScaleFont0	Noto Sans	8	75	0	0	0
+ScaleFont1	Noto Sans	8	75	0	0	0
+ScaleFont2	Noto Sans	8	75	0	0	0
+ScaleFont3	Noto Sans	8	75	0	0	0
+AxisFont0	Noto Sans	8	50	0	0	0
+AxisFont1	Noto Sans	8	50	0	0	0
+AxisFont2	Noto Sans	8	50	0	0	0
+AxisFont3	Noto Sans	8	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#313739	#313739	#313739	#313739
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	Langmuir_1/equil C	Langmuir_1/c-a	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	28	1
+<Function>
+<Type>0</Type>
+<Title>LinearFit1</Title>
+<Expression>A*x+B</Expression>
+<Variable>x</Variable>
+<Range>0.0159	0.213</Range>
+<Points>2</Points>
+<Constant>A	52.50296345098</Constant>
+<Constant>B	5.4730935215478</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#ff0000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	0	18	0	5	5	0	0
+scale	1	0	18	0	5	5	0	0
+scale	2	0	0.25	0	6	5	0	0
+scale	3	0	0.25	0	6	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+<Legend>
+<Frame>1</Frame>
+<Color>#ffffff</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>0.1472602739726</x>
+<y>8.3076923076923</y>
+<right>0.10361216730038</right>
+<bottom>14.3697478991597</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)1/C<sub>a</sub>
+\l(2)Linear fit
+<b>Function</b>: A*x+B
+<b>R<sup>2</sup></b> = 0.9866
+<b>B</b> = 5.5
+<b>A</b> = 5.2
+</Text>
+<Font>Noto Sans	8	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>255</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<graph>
+ggeometry	11	9	359	302
+<PageGeometry>0.0146277	0.0260116	0.477394	0.872832</PageGeometry>
+PlotTitle		#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	0	1	0	
+AxesTitles	Equilibrium Concentration C (mg/L)	Adsorbed mass/adsorbent  C<sub>a</sub> (mg/mg)<br>		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	4	5124	4
+AxesTitleDistance	2	-1	2	-1
+InvertedTitle	0	0	0	0
+TitleFont	Noto Sans	9	50	0	0	0
+ScaleFont0	Noto Sans	8	75	0	0	0
+ScaleFont1	Noto Sans	10	75	0	0	0
+ScaleFont2	Noto Sans	8	75	0	0	0
+ScaleFont3	Noto Sans	10	75	0	0	0
+AxisFont0	Noto Sans	8	50	0	0	0
+AxisFont1	Noto Sans	9	50	0	0	0
+AxisFont2	Noto Sans	8	50	0	0	0
+AxisFont3	Noto Sans	9	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#313739	#313739	#313739	#313739
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	Langmuir_Equil. C (mg/L)	Langmuir_C-a (mg/mg)	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	28	1
+scale	0	0	0.2	0	5	5	0	0
+scale	1	0	0.2	0	5	5	0	0
+scale	2	0	70	0	8	5	0	0
+scale	3	0	70	0	8	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+<line>	-0.38781163434903	0.156183745583039	64.1828254847645	0.156183745583039	1	#000000	DashLine	0	0	4	45	1	1</line>
+<Legend>
+<Frame>0</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>0.74733096085409</x>
+<y>0.1748987854251</y>
+<right>26.9039145907473</right>
+<bottom>0.169230769230769</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+C<sub>a,max</sub>
+</Text>
+<Font>Noto Sans	10	75	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+<Legend>
+<Frame>0</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>5.729537366548</x>
+<y>0.032</y>
+<right>26.9039145907473</right>
+<bottom>0.169230769230769</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+Non-linear Langmuir Model
+</Text>
+<Font>Noto Sans	9	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>0</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+<Legend>
+<Frame>0</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>86.690391459075</x>
+<y>0.2</y>
+<right>26.9039145907473</right>
+<bottom>0.169230769230769</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+Linearised Langmuir Model
+</Text>
+<Font>Noto Sans	9	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>255</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>0</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<multiLayer>
+freundlichLinear	1	1	04/12/16 5:03 PM
+geometry	248	-15	476	422	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	12	13	443	343
+<PageGeometry>0.025641	0.0347594	0.946581	0.917112</PageGeometry>
+PlotTitle		#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	1	0	1	0	#c0c0c0	1	0.5	#a0a0a4	2	0.4	#c0c0c0	1	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	0	1	0	
+AxesTitles	log Ca	Log C		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	4	5124	4
+AxesTitleDistance	2	-1	2	-1
+InvertedTitle	0	0	0	0
+TitleFont	Noto Sans	11	75	0	0	0
+ScaleFont0	Noto Sans	10	50	0	0	0
+ScaleFont1	Noto Sans	9	75	0	0	0
+ScaleFont2	Noto Sans	10	50	0	0	0
+ScaleFont3	Noto Sans	9	75	0	0	0
+AxisFont0	Noto Sans	8	50	0	0	0
+AxisFont1	Noto Sans	9	50	0	0	0
+AxisFont2	Noto Sans	9	50	0	0	0
+AxisFont3	Noto Sans	9	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#313739	#313739	#313739	#313739
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	Freundlichcalc_Log C	Freundlichcalc_Log Ca	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	29	1
+<Function>
+<Type>0</Type>
+<Title>LinearFit1</Title>
+<Expression>A*x+B</Expression>
+<Variable>x</Variable>
+<Range>0.544	1.52</Range>
+<Points>2</Points>
+<Constant>A	0.615853427520152</Constant>
+<Constant>B	-1.63406582231338</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#ff0000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	-1.8	-0.6	0	7	5	0	0
+scale	1	-1.8	-0.6	0	7	5	0	0
+scale	2	0	1.6	0	9	5	0	0
+scale	3	0	1.6	0	9	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+<line>	0.537373737373737	-1.30684931506849	0.00404040404040407	-1.5986301369863	1	#000000	DashLine	0	0	4	45	1	1</line>
+<Legend>
+<Frame>0</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>0.037647058823529</x>
+<y>-0.61627118644068</y>
+<right>0.290420168067227</right>
+<bottom>-0.754576271186441</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(2) Linear fit
+<b>Function</b>: A*x+B
+<b>R<sup>2</sup></b> = 0.9999
+<b>B</b> = -1.6341
+<b>A</b> =0. 6158
+</Text>
+<Font>Noto Sans	10	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>255</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+<Legend>
+<Frame>0</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>0.12373333333333</x>
+<y>-1.2742049469965</y>
+<right>0.469333333333333</right>
+<bottom>-1.51166077738516</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+extended
+</Text>
+<Font>Noto Sans	9	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>24</Angle>
+<AutoUpdate>0</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<multiLayer>
+Graph5	1	1	04/12/16 5:14 PM
+geometry	78	120	482	446	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	399	305
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	463	388
+<PageGeometry>0.0105485	0.0125628	0.976793	0.974874</PageGeometry>
+PlotTitle	 	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	0	1	0	
+AxesTitles	Equilibrium Conc. C (mg/L)	Adsorbed mass/absorbent, C<sub>a</sub> (mg/mg)		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	4	4	4
+AxesTitleDistance	2	-1	2	-1
+InvertedTitle	0	0	0	0
+TitleFont	Noto Sans	11	75	0	0	0
+ScaleFont0	Noto Sans	9	75	0	0	0
+ScaleFont1	Noto Sans	9	75	0	0	0
+ScaleFont2	Noto Sans	9	75	0	0	0
+ScaleFont3	Noto Sans	9	75	0	0	0
+AxisFont0	Noto Sans	9	50	0	0	0
+AxisFont1	Noto Sans	9	50	0	0	0
+AxisFont2	Noto Sans	9	50	0	0	0
+AxisFont3	Noto Sans	9	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#313739	#313739	#313739	#313739
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	Freundlichcalc_C	Freundlichcalc_Ca	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	29	1
+scale	0	0.04	0.22	0	10	5	0	0
+scale	1	0.04	0.22	0	10	5	0	0
+scale	2	0	35	0	8	5	0	0
+scale	3	0	35	0	8	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<open>0</open>
+<log>
+[06-10-2013 14:25:05	Plot: ''Graph1'']
+Linear Regression of dataset: Table1_Mass adsorbed(mg/kg), using function: A*x+B
+Weighting Method: No weighting
+From x = 7.9000000000000e-01 to x = 0.0000000000000e+00
+B (y-intercept) = 2.6933211216451e-02 +/- 1.4090029381955e-02
+A (slope) = 1.5672602641027e+00 +/- 4.2152882411408e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 9.6532380989946e-04
+R^2 = 0.9963960867701
+Adjusted R^2 = 0.9945941301552
+RMSE (Root Mean Squared Error) = 0.03106966060161
+RSS (Residual Sum of Squares) = 0.004826619049497
+---------------------------------------------------------------------------------------
+[06-10-2013 14:28:25	Plot: ''Graph2'']
+Linear Regression of dataset: Table1_Mass adsorbed(mg/kg), using function: A*x+B
+Weighting Method: No weighting
+From x = 7.900e-01 to x = 0.000e+00
+B (y-intercept) = 2.693e-02 +/- 1.409e-02
+A (slope) = 1.567e+00 +/- 4.215e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 9.653e-04
+R^2 = 0.996
+Adjusted R^2 = 0.995
+RMSE (Root Mean Squared Error) = 0.0311
+RSS (Residual Sum of Squares) = 0.00483
+---------------------------------------------------------------------------------------
+[06-10-2013 14:31:16	Plot: ''Graph1'']
+Linear Regression of dataset: Table1_Mass adsorbed(mg/kg), using function: A*x+B
+Weighting Method: No weighting
+From x = 7.900e-01 to x = 0.000e+00
+B (y-intercept) = 2.693e-02 +/- 1.409e-02
+A (slope) = 1.567e+00 +/- 4.215e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 9.653e-04
+R^2 = 0.996
+Adjusted R^2 = 0.995
+RMSE (Root Mean Squared Error) = 0.0311
+RSS (Residual Sum of Squares) = 0.00483
+---------------------------------------------------------------------------------------
+[06-10-2013 14:33:57	Plot: ''Graph1'']
+Linear Regression of dataset: Table1_Mass adsorbed(mg/kg), using function: A*x
+Weighting Method: No weighting
+From x = 7.900e-01 to x = 0.000e+00
+A (slope) = 1.612e+00 +/- 4.219e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.392e-03
+R^2 = 0.994
+Adjusted R^2 = 0.993
+RMSE (Root Mean Squared Error) = 0.0373
+RSS (Residual Sum of Squares) = 0.00835
+---------------------------------------------------------------------------------------
+[06-10-2013 14:40:13	Plot: ''Graph1'']
+Linear Regression of dataset: Table1_Mass adsorbed(mg/kg), using function: A*x+B
+Weighting Method: No weighting
+From x = 7.900e-01 to x = 0.000e+00
+B (y-intercept) = 2.693e-02 +/- 1.409e-02
+A (slope) = 1.567e+00 +/- 4.215e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 9.653e-04
+R^2 = 0.996
+Adjusted R^2 = 0.995
+RMSE (Root Mean Squared Error) = 0.0311
+RSS (Residual Sum of Squares) = 0.00483
+---------------------------------------------------------------------------------------
+
+
+[07/10/14 8:11 PM	Plot: ''Graph1'']
+Linear Regression of dataset: Table1_Mass adsorbed(mg/kg), using function: A*x
+Weighting Method: No weighting
+From x = 1.5000000000000e+01 to x = 1.0000000000000e+02
+A (slope) = 1.5082508250825e+00 +/- 3.6898811509898e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.0940594059406e+01
+R^2 = 0.9848082189561
+Adjusted R^2 = 0.9810102736951
+RMSE (Root Mean Squared Error) = 5.562426993625
+RSS (Residual Sum of Squares) = 154.702970297
+---------------------------------------------------------------------------------------
+[07/10/14 8:13 PM	Plot: ''Graph1'']
+Linear Regression of dataset: Table1_Mass adsorbed(mg/kg), using function: A*x+B
+Weighting Method: No weighting
+From x = 1.5000e+01 to x = 1.0000e+02
+B (y-intercept) = 7.2620e+00 +/- 3.9270e+00
+A (slope) = 1.4044e+00 +/- 6.3810e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.0850e+01
+R^2 = 0.9918
+Adjusted R^2 = 0.9864
+RMSE (Root Mean Squared Error) = 4.566
+RSS (Residual Sum of Squares) = 83.4
+---------------------------------------------------------------------------------------
+
+[03/12/16 11:19 PM	Plot: ''Graph2'']
+Linear Regression of dataset: Langmuir_1/c-a, using function: A*x+B
+Weighting Method: No weighting
+From x = 2.1300e-01 to x = 1.5900e-02
+B (y-intercept) = 5.4731e+00 +/- 3.5768e-01
+A (slope) = 5.2503e+01 +/- 3.0579e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.6146e-01
+R^2 = 0.9866
+Adjusted R^2 = 0.9777
+RMSE (Root Mean Squared Error) = 0.5113
+RSS (Residual Sum of Squares) = 1.046
+---------------------------------------------------------------------------------------
+
+
+[04/12/16 8:33 AM	Plot: ''Freundlich'']
+Linear Regression of dataset: Table1_Log Ca, using function: A*x+B
+Weighting Method: No weighting
+From x = 1.1800e+00 to x = 2.0000e+00
+B (y-intercept) = 5.1785e-01 +/- 1.3831e-01
+A (slope) = 8.1216e-01 +/- 8.2361e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.0792e-03
+R^2 = 0.9605
+Adjusted R^2 = 0.9341
+RMSE (Root Mean Squared Error) = 0.05549
+RSS (Residual Sum of Squares) = 0.01232
+---------------------------------------------------------------------------------------
+
+[04/12/16 5:07 PM	Plot: ''Graph4'']
+Linear Regression of dataset: Freundlichcalc_Log Ca, using function: A*x+B
+Weighting Method: No weighting
+From x = 5.4400e-01 to x = 1.5200e+00
+B (y-intercept) = -1.6341e+00 +/- 3.7091e-03
+A (slope) = 6.1585e-01 +/- 3.4687e-03
+--------------------------------------------------------------------------------------
+Chi^2/doF = 8.0981e-06
+R^2 = 0.9999
+Adjusted R^2 = 0.9998
+RMSE (Root Mean Squared Error) = 0.002846
+RSS (Residual Sum of Squares) = 3.239e-05
+---------------------------------------------------------------------------------------
+
+[10/12/16 7:06 PM	Plot: ''Linear'']
+Linear Regression of dataset: Linear2_Mass adsorbed(mg/kg), using function: A*x+B
+Weighting Method: No weighting
+From x = 1.5000e+01 to x = 1.0000e+02
+B (y-intercept) = 7.2620e+00 +/- 3.9270e+00
+A (slope) = 1.4044e+00 +/- 6.3810e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.0850e+01
+R^2 = 0.9918
+Adjusted R^2 = 0.9864
+RMSE (Root Mean Squared Error) = 4.566
+RSS (Residual Sum of Squares) = 83.4
+---------------------------------------------------------------------------------------
+
+</log>
