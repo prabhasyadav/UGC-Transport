@@ -15,4 +15,4 @@ The .ipynb is a Python 3, JUPYTER Notebook file
 This site will contain documents that is part of the Flow and Transport module. 
 The site will be updated with interactive notebook (Jupyter), spreadsheet (ods files) and example problems.
 
-ONLY OPENSOURCE CODE USED IN DEVELOPMENT OF THE CONTENT
+**ONLY OPENSOURCE CODE USED IN DEVELOPMENT OF THE CONTENT**
