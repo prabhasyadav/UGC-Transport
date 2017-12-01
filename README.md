@@ -1,8 +1,8 @@
 # UGC-Transport
 
-The **main** text is: Flow and Transport_UGC_Final_PKY.pdf
+The **main** text is: PDF files... Module 17 and Module 18
 
-The text is licensed with creative commons (CC-BY-SA) copyright.
+The pdf files are licensed with creative commons (CC-BY-SA) copyright.
 
 
 The Octave codes- .m files (Opensource MATLAB<sup>TM</sup> Clone https://www.gnu.org/software/octave/) can be found in Codes Folder
