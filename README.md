@@ -2,6 +2,8 @@
 
 The **main** text is: Flow and Transport_UGC_Final_PKY.pdf
 
+The text is licensed with creative commons (CC-BY-SA) copyright.
+
 
 The Octave codes- .m files (Opensource MATLAB<sup>TM</sup> Clone https://www.gnu.org/software/octave/) can be found in Codes Folder
 
